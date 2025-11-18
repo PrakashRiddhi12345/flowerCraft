@@ -1,8 +1,11 @@
-export default function Footer(){
+export default function Footer() {
   return (
-    <footer className="bg-pink-600 text-white py-6 mt-8">
-      <div className="max-w-6xl mx-auto text-center">
-        <p>© {new Date().getFullYear()} Craftify. Made with ❤️ using React & Tailwind.</p>
+    <footer className="bg-gray-900 text-gray-300 py-6 mt-10">
+      <div className="max-w-6xl mx-auto px-4 text-center">
+        <h2 className="text-lg font-semibold">CraftStore</h2>
+        <p className="text-sm mt-1">
+          © {new Date().getFullYear()} All Rights Reserved.
+        </p>
       </div>
     </footer>
   );
