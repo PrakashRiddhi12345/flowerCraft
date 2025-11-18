@@ -1,11 +1,26 @@
-export const products = [
+export const productsData = [
   {
-    id: 1,  
-    name: "Wireless Mouse",
-    price: 25.99,
-    category: "Electronics",
-    stock: 150,
-    description: "A comfortable wireless mouse with ergonomic design.",
-    imageUrl: "https://example.com/images/wireless-mouse.jpg"
-    },
-]
+    id: 1,
+    name: "Red Rose Bouquet",
+    category: "roses",
+    price: 499,
+    description: "A beautiful handcrafted rose bouquet.",
+    image: "/assets/products/image1.png",
+  },
+  {
+    id: 3,
+    name: "Red Rose Bouquet",
+    category: "roses",
+    price: 499,
+    description: "A beautiful handcrafted rose bouquet.",
+    image: "/assets/products/image1.png",
+  },
+  {
+    id: 2,
+    name: "Yellow Decorative Flowers",
+    category: "decorations",
+    price: 299,
+    description: "Perfect for home decoration and gifting.",
+    image: "/assets/products/image2.png",
+  },
+];

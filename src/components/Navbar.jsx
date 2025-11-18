@@ -1,18 +1,21 @@
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FaShoppingCart, FaHeart, FaSearch, FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [showCategories, setShowCategories] = useState(false);
+  const [query, setQuery] = useState("");
+const navigate = useNavigate();
 
-  const categories = [
-    { name: "Flowers", path: "/category/flowers" },
-    { name: "Colors", path: "/category/colors" },
-    { name: "Home Made Crafts", path: "/category/crafts" },
-    { name: "Decor Items", path: "/category/decor" },
-    { name: "Handmade Gifts", path: "/category/gifts" }
-  ];
+const handleSearch = (e) => {
+  e.preventDefault();
+  if (!query.trim()) return;
+  navigate(`/search?q=${query}`);
+  setQuery("");
+};
+
 
   return (
     <header className="shadow bg-white/80 backdrop-blur-md sticky top-0 z-50">

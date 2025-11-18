@@ -7,6 +7,8 @@ import Cart from "./pages/Cart";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Wishlist from "./pages/wishlist"
+import ProductList from "./pages/ProductList";
+
 
 
 export default function App() {
@@ -19,6 +21,9 @@ export default function App() {
           <Route path="/Contact" element={<Contact />} /> 
           <Route path="/cart" element={<Cart />} />
           <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/category/:category" element={<ProductList />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
+
         </Route>
       </Routes>
     </BrowserRouter>
